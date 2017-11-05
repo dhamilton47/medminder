@@ -1,0 +1,21 @@
+<h1>New Historical Prescription Form</h1>
+
+<%= form_with scope: :history, url: histories_path, local: true do |form| %>
+  <p>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.label :dosage %><br>
+    <%= form.text_area :dosage %>
+  </p>
+  <p>
+    <%= form.label :purpose %><br>
+    <%= form.text_area :purpose %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+<% end %>

@@ -1,0 +1,16 @@
+<h1>Past Prescriptions</h1>
+
+<table>
+  <tr>
+    <th>Drug Name</th>
+    <th>Dosage</th>
+  </tr>
+
+  <% @histories.each do |x| %>
+    <tr>
+      <td><%= x.name %></td>
+      <td><%= x.dosage %></td>
+      <td><%= link_to 'Show', history_path(x) %></td>
+    </tr>
+  <% end %>
+</table>

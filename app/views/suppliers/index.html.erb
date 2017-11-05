@@ -1,0 +1,17 @@
+<h1>Current Suppliers</h1>
+
+<table>
+  <tr>
+    <th>Supplier's Name</th>
+    <th>Phone</th>
+    <th>E-mail</th>
+  </tr>
+
+  <% @suppliers.each do |x| %>
+    <tr>
+      <td><%= x.name %></td>
+      <td><%= x.phone %></td>
+      <td><%= link_to 'Show', supplier_path(x) %></td>
+    </tr>
+  <% end %>
+</table>

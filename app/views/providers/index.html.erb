@@ -1,0 +1,17 @@
+<h1>Current Providers</h1>
+
+<table>
+  <tr>
+    <th>Doctor's Name</th>
+    <th>Dr. Phone</th>
+    <th>Dr. E-mail</th>
+  </tr>
+
+  <% @providers.each do |x| %>
+    <tr>
+      <td><%= x.name %></td>
+      <td><%= x.phone %></td>
+      <td><%= link_to 'Show', provider_path(x) %></td>
+    </tr>
+  <% end %>
+</table>
