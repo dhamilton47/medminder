@@ -1,6 +1,6 @@
-<h1>New Historical Prescription Form</h1>
+<h1>New Prescription Form</h1>
 
-<%= form_with scope: :history, url: histories_path, local: true do |form| %>
+<%= form_with scope: :prescription, url: prescriptions_path, local: true do |form| %>
   <p>
     <%= form.label :name %><br>
     <%= form.text_field :name %>
@@ -8,7 +8,7 @@
 
   <p>
     <%= form.label :dosage %><br>
-    <%= form.text_area :dosage %>
+    <%= form.text_field :dosage %>
   </p>
   <p>
     <%= form.label :purpose %><br>

@@ -1,4 +1,3 @@
-# README
 MedMinder - Medication Management made simple
 
 This application is actually a sub-unit of my theoretical PatientMinder application.

@@ -1,11 +1,11 @@
-<h1>New Prescription Form</h1>
+<h1>New Patient Form</h1>
 
-<%= form_with scope: :active, url: actives_path, local: true do |form| %>
+<%= form_with scope: :patient, url: patients_path, local: true do |form| %>
   <p>
     <%= form.label :name %><br>
     <%= form.text_field :name %>
   </p>
-
+<!--
   <p>
     <%= form.label :dosage %><br>
     <%= form.text_field :dosage %>
@@ -14,7 +14,7 @@
     <%= form.label :purpose %><br>
     <%= form.text_area :purpose %>
   </p>
-
+-->
   <p>
     <%= form.submit %>
   </p>

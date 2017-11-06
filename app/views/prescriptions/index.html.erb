@@ -1,0 +1,16 @@
+<h1>Current Prescriptions</h1>
+
+<table>
+  <tr>
+    <th>Drug Name</th>
+    <th>Dosage</th>
+  </tr>
+
+  <% @prescriptions.each do |p| %>
+    <tr>
+      <td><%= p.name %></td>
+      <td><%= p.dosage %></td>
+      <td><%= link_to 'Show', prescription_path(p) %></td>
+    </tr>
+  <% end %>
+</table>

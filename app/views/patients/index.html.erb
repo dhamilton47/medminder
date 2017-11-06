@@ -1,0 +1,14 @@
+<h1>Current Patients</h1>
+
+<table>
+  <tr>
+    <th>Patient Name</th>
+  </tr>
+
+  <% @patients.each do |p| %>
+    <tr>
+      <td><%= p.name %></td>
+      <td><%= link_to 'Show', patient_path(p) %></td>
+    </tr>
+  <% end %>
+</table>
