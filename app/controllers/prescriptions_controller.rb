@@ -10,6 +10,8 @@ class PrescriptionsController < ApplicationController
     end
 
     def new
+      @prescription = Prescription.new
+      @prescription.active = true
     end
 
     def edit

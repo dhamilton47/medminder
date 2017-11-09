@@ -1,3 +1,3 @@
 class Supplier < ApplicationRecord
-  belongs_to :active, :history
+  has_many :prescriptions
 end
